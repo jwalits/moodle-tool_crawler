@@ -147,8 +147,7 @@ $string['queued'] = 'Queued URLs';
 $string['queued_header'] = '<p>The title and course are only known if the URL has been seen on a previous crawl.</p>';
 $string['recent'] = 'Recently crawled URLs';
 $string['recentactivity'] = 'Days of recent activity';
-$string['recentactivitydesc'] = 'A course is crawled only if it has been viewed in the last X days.
-At ' . '{$a->days}' . ' day(s) of recent activity, this will include ' . '{$a->count}' . ' courses total.';
+$string['recentactivitydesc'] = 'A course will be crawled only if it has been viewed in the last X days.';
 $string['recent_header'] = '';
 $string['redirect'] = 'Redirect: {$a->redirectlink}';
 $string['response'] = 'Response';

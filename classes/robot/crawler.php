@@ -1446,6 +1446,11 @@ class crawler {
         global $DB;
         $config = self::get_config();
 
+        // Do not try to fetch recent courses if uselogs setting is not enabled.
+        if ($config->uselogs == false) {
+            return array();
+        }
+
         $startingtimerecentactivity = strtotime("-$config->recentactivity days", time());
 
         $sql = "SELECT DISTINCT log.courseid
