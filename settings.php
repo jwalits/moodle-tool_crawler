@@ -144,7 +144,7 @@ useridlistid
         $robot = new \tool_crawler\robot\crawler();
         $settings->add(new admin_setting_configtext('tool_crawler/recentactivity',
                                                     new lang_string('recentactivity',    'tool_crawler'),
-                                                    get_string('recentactivitydesc', 'tool_crawler'),
+                                                    get_string('recentactivitydesc', 'tool_crawler', $robot::get_config()->recentactivity),
                                                     '1'));
 
         $settings->add(new admin_setting_configtext('tool_crawler/maxtime',
